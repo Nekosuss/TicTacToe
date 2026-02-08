@@ -1,0 +1,73 @@
+/* Main container */
+.container {
+  text-align: center;
+}
+
+/* Title */
+.title {
+  margin-top: 50px;
+  color: white;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title span {
+  color: #26ffcb;
+  padding-left: 15px;
+}
+
+/* Game board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 8px;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+/* Boxes */
+.boxes {
+  width: 120px;
+  height: 120px;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.boxes:hover {
+  background: #dcdcdc;
+}
+
+/* Box images */
+.boxes img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+/* Reset button */
+.reset {
+  width: 250px;
+  height: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background: #1f3540;
+  font-size: 26px;
+  color: #26ffcb;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.reset:hover {
+  background: #264653;
+}
